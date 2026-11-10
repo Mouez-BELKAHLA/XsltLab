@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+*.user
+XsltLab.Demo/demo-files/out/
+XsltLab.Demo/demo-files/draft.docx
