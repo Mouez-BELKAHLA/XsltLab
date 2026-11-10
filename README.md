@@ -1,6 +1,6 @@
 # XsltLab: template expressions for draft documents
 
-A small, runnable prototype for the design task "Template expressions for draft documents".
+A small, runnable C#/.NET prototype that lets a non-engineering content team add derived values to draft documents using XSLT, with no code change or release, while the filed XML stays byte-for-byte identical.
 
 **Idea:** the content team already writes XSLT. Let them write a second, small XSLT for the *draft*
 (`expressions.xslt`). It derives draft-only values (`IsBigCorrection`, `VatNumberNoPrefix`, a tick box).
@@ -73,3 +73,5 @@ They are used only by the tests, to show routing and migration parity. The Demo 
 - The renderer is a stand-in: it handles placeholders Word splits across runs, but not headers, footers or text boxes,
   and it produces `.docx`, not PDF.
 - Flat string values only; no transaction lists in expressions.
+
+See [DESIGN.md](DESIGN.md) for the design notes: trade-offs, limits and the migration plan.
